@@ -1,3 +1,35 @@
+# tanshuai notes
+
+## Install Problems
+
+### Error on MacOS "You need Python 3.7 or greater installed and mapped to the 'python' command"
+
+ln -s -f /usr/bin/python3 /usr/local/bin/python
+
+### Postgres is not ready ... FATAL:  database "vasp_backend_db" does not exist
+
+Logs:
+```
+vasp-backend-web_1     | [2021-07-06 09:50:17,125] WARNING in __init__: Postgres is not ready, waiting...
+db_1                   | 2021-07-06 09:50:17.869 UTC [88] FATAL:  database "vasp_backend_db" does not exist
+vasp-backend-web_1     | [2021-07-06 09:50:17,870] WARNING in __init__: Postgres is not ready, waiting...
+db_1                   | 2021-07-06 09:50:18.132 UTC [89] FATAL:  database "vasp_backend_db" does not exist
+vasp-backend-web_1     | [2021-07-06 09:50:18,132] WARNING in __init__: Postgres is not ready, waiting...
+db_1                   | 2021-07-06 09:50:18.876 UTC [90] FATAL:  database "vasp_backend_db" does not exist
+vasp-backend-web_1     | [2021-07-06 09:50:18,876] WARNING in __init__: Postgres is not ready, waiting...
+db_1                   | 2021-07-06 09:50:19.139 UTC [91] FATAL:  database "vasp_backend_db" does not exist
+vasp-backend-web_1     | [2021-07-06 09:50:19,139] WARNING in __init__: Postgres is not ready, waiting...
+db_1                   | 2021-07-06 09:50:19.881 UTC [92] FATAL:  database "vasp_backend_db" does not exist
+vasp-backend-web_1     | [2021-07-06 09:50:19,881] WARNING in __init__: Postgres is not ready, waiting...
+db_1                   | 2021-07-06 09:50:20.144 UTC [93] FATAL:  database "vasp_backend_db" does not exist
+vasp-backend-web_1     | [2021-07-06 09:50:20,144] WARNING in __init__: Postgres is not ready, waiting...
+vasp-backend-web_1     | [2021-07-06 09:50:20,882] ERROR in __init__: Database failed to start, exiting...
+vasp-backend-web_1     | [2021-07-06 09:50:21,146] ERROR in __init__: Database failed to start, exiting...
+```
+
+Solution: Open Terminal of this Docker to run `backend.sh`.
+
+
 > **Note to readers:** On December 1, 2020, the Libra Association was renamed to Diem Association. The project repos are in the process of being migrated. All projects will remain available for use here until the migration to the new GitHub Organization is complete.
 
 # Reference Merchant
