@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "repository": "tanshuai/reference-merchant",
+  "repository_id": 382542538,
+  "date": "2026-10-03",
+  "source_sha": "0d535df6cb7cae91aff742b93e5625636f239424",
+  "entries": [
+    {
+      "original_path": ".github/workflows/vasp_backend_test.yml",
+      "archived_path": "archive/github-actions/2026-10-03/.github/workflows/vasp_backend_test.yml",
+      "source_blob_sha": "3cc4699d717a4b0757952a7cbb0f40afd21c07a4",
+      "sha256": "4f69f576a15fc4935201b984a81891ab53820077ac496022417dcd04122bb168",
+      "workflow_id": 21010715,
+      "workflow_state_before": "active",
+      "business_consumer": "Inherited reference-merchant test workflow; only local source drift is README",
+      "retirement_reason": "Live compare shows two ahead commits but only README.md differs; application and workflow remain upstream generic tests, no current custom CI consumer or retained run",
+      "config_finding_ids": [],
+      "secret_names": [],
+      "external_entrypoint_types": [],
+      "local_dependency_paths": [],
+      "restore": "Restore archived YAML and the listed dependency snapshots in a reviewed PR; validate runtime/action versions, consumers and write destinations before explicitly re-enabling the original workflow ID."
+    }
+  ],
+  "code_and_dependency_snapshots": [],
+  "retained_dependency_references": [],
+  "upstream_preflight": null,
+  "caller_check": {
+    "current_all_accessible_workflows": 286,
+    "remaining_reusable_callers": [],
+    "external_dispatch_note": "Declared dispatch/manual entrypoints recorded; entire retired source preserved. No dispatch APIs were invoked."
+  },
+  "passive_security_alerts": "No alert setting changed. Archived version-update YAML is no longer active configuration.",
+  "rollback": "Reviewed source restoration plus explicit workflow enablement; for unsafe cross-repository publishers establish an updated producer/consumer contract and guarded destination before restoring."
+}
